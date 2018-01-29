@@ -120,7 +120,6 @@ public class qr extends AppCompatActivity implements ZXingScannerView.ResultHand
 
         }
 
-
     }
 }
 
