@@ -44,7 +44,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     private static final String TAG = "gpslog";
     private LocationManager mLocMgr;
     public static double latidud, longitud;
-    public static int distance, distance2, distance3, distance4, distanceCa;
+    public static int distance, distance2, distance3, distance4, distance5;
     private TextView lati, longi, objetivo;
     public static int radius, radius2, radius3, radius4;
     public static LatLng colegio, tesoro2, tesoro3, tesoro4, tesoroaux;
@@ -400,7 +400,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
             distance4=(int)miPosicion.distanceTo(tes3);
 
-            distanceCa=(int)miPosicion.distanceTo(tes4);
+            distance5=(int)miPosicion.distanceTo(tes4);
 
             if (distance2 <=60) {
 
@@ -414,7 +414,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                 tesoroaux=tesoro3;
 
-            } else if(distanceCa<=60){
+            } else if(distance5<=60){
 
             tesoroaux=tesoro4;
         }
